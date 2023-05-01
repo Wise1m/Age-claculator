@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Age calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="input">
+      <form action="#" name="f1" onsubmit="return validateForm()" id="form" method="post">
+        <div class="input-in">
+          <label for="Day" id="daylabel">DAY</label><br>
+          <input type="text" name="Day" id="day" placeholder="DD"><br>
+          <div class="error" id="dayError"></div>
+        </div>
+
+        <div class="input-in">
+          <label for="Month" id="monthlabel">MONTH</label><br>
+          <input type="text" name="Month" id="month" placeholder="MM"><br>
+          <div class="error" id="monthError"></div>
+        </div>
+
+        <div class="input-in">
+          <label for="Year" id="yearlabel">YEAR</label><br>
+          <input type="text" name="Year" id="year" placeholder="YYYY"><br>
+          <div class="error" id="yearError"></div>
+        </div>
+      </form>
+    </div>
+
+    <div class="section-2">
+      <hr>
+      <input type="image" class="icon" name="submit" src="assets/images/icon-arrow.svg" style="width: fit-content;" alt="calculate" onclick="age()">
+    </div>
+
+    <div class="section-3">
+      <h1><span class="value" id="yearsOld">--</span>years</h1>
+      <h1><span class="value" id="monthsOld">--</span>months</h1>
+      <h1><span class="value" id="daysOld">--</span>days</h1>
+    </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ph3nt0m</a>.
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

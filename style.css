@@ -1,0 +1,154 @@
+body{
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 86%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-ExtraBoldItalic";
+    src: url(assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+h1{
+    padding: 0 10px 0 10;
+    margin: 0 0 -20px 0;
+    font-family: "Poppins-ExtraBoldItalic";
+}
+h3{
+    font-size: 15px;
+    color: hsl(0, 1%, 44%);
+}
+
+.container{
+    max-width: 60%;
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 94%);
+    margin: 20%;
+    padding: 40px 40px 50px 20px;
+    border-radius: 10px 10px 100px 10px;
+
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid hsl(0, 1%, 44%);
+    width: 80px;
+    height: 40px;
+}
+
+.input-in{
+    margin: 0 0 0 20px;
+}
+
+#form{
+    display: flex;
+}
+
+label{
+    font-size: 15px;
+    color: hsl(0, 1%, 44%);
+}
+
+.error{
+    color: red;
+    font-size: 50%;
+}
+/* 
+.box{
+    border: 1px solid hsl(0, 1%, 44%);
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px 50px 10px 5px;
+    margin: -10px 0 0 0px;
+    font-weight: bold;
+    font-size: 20px;
+} */
+
+.section-2{
+    margin: 50px 0 0 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon{
+    background-color: hsl(259, 100%, 65%);
+    padding: 10px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    top: -45px;
+}
+
+hr{
+    width: 90%;
+}
+
+.value{
+    color: hsl(259, 100%, 65%);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.section-3{
+    margin-top: -30px;
+}
+
+.attribution {
+     font-size: 11px; text-align: center; 
+     margin-top: 20px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.icon:active{
+    background-color: hsl(0, 0%, 8%);
+}
+
+@media screen  and (min-width: 768px) {
+    h1{
+        font-size: 60px;
+    }
+    .icon{
+        left: 200px;
+    }
+
+    .container{
+        width: 450px;
+        align-items: flex-start;
+        padding: 40px 20px 40px 20px;
+    }
+
+    .value{
+       margin-left: 20px;
+    }
+
+    .section-2{
+        margin: 20px 0 0 0px;
+    }
+
+    .section-3{
+        margin-top: -50px;
+    }
+}
